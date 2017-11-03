@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css"/>
+<title>Football</title>
+<script>
+function banner(){ 
+var text = confirm("Do you really want to visit the NFL's Official website?"); 
+return text; 
+}
+function answer(){
+var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = "";
+for( var i = 0; i < radio.length; i++) { 
+   if(radio[i].value == "kcr" && radio[i].checked == true) { 
+     selection = true;
+     }
+   }
+   if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+}
+</script>
+</head>
+<footer> Caleb Jensen</footer>
+<body id="background">
+	<a href="https://www.nfl.com/" onclick="return banner()">
+	 <header> Seahawks Football</header>
+	</a>  
+	<h1>Go Sehawks<h1>
+		<p class="paragraph"> <b>Football</b> is the staple sport for <u>Americans</u> to watch. It is entertaining and is a way for us to enjoy ourselves. We watch pro NFL teams compete.<span class="wrap-text"> We watch college teams compete.</span> We get so into this sport that we are willing to do anything to see the <i>game</i>.<p>
+<div class="wrap-list"> 
+			<ol> 
+				<li class="listitem">Pick 6</li>
+				<li class="listitem"> Touchdown </li>
+				<li class="listitem"> Field Goal </li>
+			</ol>
+</div>
+<h2>Seahawks Trivia Question</h2>
+<p>What was the score in superbowl 48?</p>
+<div class="wrap-trivia">
+	<form>
+	  <div id="response"></div>
+	 <input type="radio" name="trivia" value="incorrect">Seahawks 16; Broncos 35<br>
+	 <input type="radio" name="trivia" value="incorrect">Seahawks 27; Broncos 23<br>
+	 <input type="radio" name="trivia" value="kcr">Seahawks 43; Broncos 8<br>
+	 <input type="radio" name="trivia" value="incorrect">Seahawks 8; Broncos 43<br>
+	 <input type="button" id="Click Here" value="Submit" onclick="answer()">
+    </form>
+</div>
+<audio width="400" hieght="220" controls>
+	<source src="https://www.youtube.com/embed/KxNGMvNIvP8"
+	type="audio/mpeg">
+		Your browser does not support HTML 5 audio.
+</audio>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4nwaQ4CUoV8" frameborder="0" allowfullscreen>
+</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ay3Jo1QsRWs" frameborder="0" allowfullscreen>
+</iframe>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15bp-7SJlcKnsRhSGbB1_jfr23iNqjMSQmHc71BEeKVArq3t8Hg" />
+<img src="http://images2.onionstatic.com/clickhole/1887/3/16x9/800.jpg" />
+<hr>
+<center> Caleb Jensen <a href="https://www.nfl.com/"> NFL Official Website</a> </center>
+</body>
+</html>
